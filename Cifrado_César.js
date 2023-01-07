@@ -7,16 +7,16 @@ function rot13(str) {
   };
   
    let result = '';
-  for (const ch of str) {
+  for (const cif of str) {
     
     if (/[A-Z]/.test(ch)) {
-      result += rot13Table[ch];
+      result += rot13Table[cif];
     }else {
-      result += ch;
+      result += cif;
     }
   }
 
   return result;
 }
 
-console.log(rot13("SERR PBQR PNZC"))
+console.log(rot13("UBYN ZHAQB"))
